@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- og format -->
+    <meta property="og:title" content="">
+    <!-- bar color -->
+    <meta name="theme-color" content="#fff">
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">-->
+    <title>News</title>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <%= _.template(require('./parts/header.html'))() %>
+    <div class="app" id="app">
+        <div class="news-breadcrumbs">
+            <ul class="breadcrumbs">
+
+                <li><a class="breadcrumbs__path" href="index.html">Home</a></li>
+                <li><a class="breadcrumbs__current" href="#">News</a></li>
+            </ul>
+        </div>
+        <section class="news">
+            <div class="container">
+                <h1 class="news__title">お知らせ</h1>
+                <div class="news__category">
+                    <h2 class="news__category-title">Category</h2>
+                    <div class="separator"></div>
+                    <div class="news__category-switcher">
+                        <div class="news__category-switcher-button">
+                            <a class="btn-2" href="#">お知らせ</a>
+                        </div>
+                        <div class="news__category-switcher-button">
+                            <a class="btn-2" href="#">コラム</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="news__list">
+                    <li class="news__list-item">
+                        <a class="news__item-link" href="#">
+                            <div class="news__link-img">
+                                <img src="images/news/pic_01.jpg" alt="news image">
+                            </div>
+                            <div class="news__link-text">
+                                <div class="news__text-head">
+                                    <div class="news__head-date">
+                                        2020.11.03
+                                    </div>
+                                    <div class="news__head-category">
+                                        コラム
+                                    </div>
+                                </div>
+                                <div class="news__text-body">
+                                    <h2 class="news__body-title">
+                                        テキストテキストテキストテキストテキストテキスト...
+                                    </h2>
+                                    <p class="news__body-paragraph">
+                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト...テキストテキストテキストテキストテキストテキスト...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="news__link-arrow">
+                                <p>⟶</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news__list-item">
+                        <a class="news__item-link" href="#">
+                            <div class="news__link-img">
+                                <img src="images/news/pic_01.jpg" alt="news image">
+                            </div>
+                            <div class="news__link-text">
+                                <div class="news__text-head">
+                                    <div class="news__head-date">
+                                        2020.11.03
+                                    </div>
+                                    <div class="news__head-category">
+                                        コラム
+                                    </div>
+                                </div>
+                                <div class="news__text-body">
+                                    <h2 class="news__body-title">
+                                        テキストテキストテキストテキストテキストテキスト...
+                                    </h2>
+                                    <p class="news__body-paragraph">
+                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト...テキストテキストテキストテキストテキストテキスト...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="news__link-arrow">
+                                <p>⟶</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news__list-item">
+                        <a class="news__item-link" href="#">
+                            <div class="news__link-img">
+                                <img src="images/news/pic_01.jpg" alt="news image">
+                            </div>
+                            <div class="news__link-text">
+                                <div class="news__text-head">
+                                    <div class="news__head-date">
+                                        2020.11.03
+                                    </div>
+                                    <div class="news__head-category">
+                                        コラム
+                                    </div>
+                                </div>
+                                <div class="news__text-body">
+                                    <h2 class="news__body-title">
+                                        テキストテキストテキストテキストテキストテキスト...
+                                    </h2>
+                                    <p class="news__body-paragraph">
+                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト...テキストテキストテキストテキストテキストテキスト...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="news__link-arrow">
+                                <p>⟶</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news__list-item">
+                        <a class="news__item-link" href="#">
+                            <div class="news__link-img">
+                                <img src="images/news/pic_01.jpg" alt="news image">
+                            </div>
+                            <div class="news__link-text">
+                                <div class="news__text-head">
+                                    <div class="news__head-date">
+                                        2020.11.03
+                                    </div>
+                                    <div class="news__head-category">
+                                        コラム
+                                    </div>
+                                </div>
+                                <div class="news__text-body">
+                                    <h2 class="news__body-title">
+                                        テキストテキストテキストテキストテキストテキスト...
+                                    </h2>
+                                    <p class="news__body-paragraph">
+                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト...テキストテキストテキストテキストテキストテキスト...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="news__link-arrow">
+                                <p>⟶</p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="pagination">
+                    <a class="pagination__button inactive" href="#">&#60;</a>
+                    <a class="pagination__button active" href="#">1</a>
+                    <a class="pagination__button" href="#">2</a>
+                    <a class="pagination__button" href="#">...</a>
+                    <a class="pagination__button" href="#">8</a>
+                    <a class="pagination__button" href="#">9</a>
+                    <a class="pagination__button" href="#">&#62;</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <%= _.template(require('./parts/footer.html'))() %>
+</div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- og format -->
+    <meta property="og:title" content="">
+    <!-- bar color -->
+    <meta name="theme-color" content="#fff">
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">-->
+    <title>Kimono</title>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <%= _.template(require('./parts/header.html'))() %>
+    <div class="app" id="app">
+        <div class="first-view">
+            <div class="container">
+                <div class="first-view__image"></div>
+                <div class="first-view__title"><h1>着物アトリヱりんご</h1></div>
+            </div>
+        </div>
+        <section class="home-news">
+            <div class="container">
+                <div class="title-item">
+                    <h2 class="topic">NEWS</h2>
+                    <span>お知らせ</span>
+                </div>
+                <ul class="home-news__list">
+                    <li class="home-news__item">
+                        <div class="home-news__item-date">2020.11.03</div>
+                        <div class="home-news__item-link"><a href="#">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</a></div>
+                    </li>
+                    <li class="home-news__item">
+                        <div class="home-news__item-date">2020.11.03</div>
+                        <div class="home-news__item-link"><a href="#">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</a></div>
+                    </li>
+                </ul>
+                <div class="button">
+                    <a class="btn-1" href="news.html" type="text/html">テキストテキスト</a>
+                </div>
+            </div>
+        </section>
+        <section class="home-works">
+            <div class="container">
+                <div class="title-item">
+                    <h2 class="topic">WORKS</h2>
+                    <span>事業内容</span>
+                </div>
+                <ul class="home-works__list">
+                    <li class="home-works__list-item">
+                        <a class="home-works__item-link" href="works.html" type="text/html">
+                            <img class="home-works__item-image" src="images/home-works/pic_01.jpg" alt="work image">
+                            <h3 class="home-works__item-header">着物関連イベントの開催</h3>
+                            <p class="home-works__item-paragraph">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </a>
+                    </li>
+                    <li class="home-works__list-item">
+                        <a class="home-works__item-link" href="works.html" type="text/html">
+                            <img class="home-works__item-image" src="images/home-works/pic_01.jpg" alt="work image">
+                            <h3 class="home-works__item-header">着物関連イベントの開催</h3>
+                            <p class="home-works__item-paragraph">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </a>
+                    </li>
+                    <li class="home-works__list-item">
+                        <a class="home-works__item-link" href="works.html" type="text/html">
+                            <img class="home-works__item-image" src="images/home-works/pic_01.jpg" alt="work image">
+                            <h3 class="home-works__item-header">着物関連イベントの開催</h3>
+                            <p class="home-works__item-paragraph">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </a>
+                    </li>
+                    <li class="home-works__list-item">
+                        <a class="home-works__item-link" href="works.html" type="text/html">
+                            <img class="home-works__item-image" src="images/home-works/pic_01.jpg" alt="work image">
+                            <h3 class="home-works__item-header">着物関連イベントの開催</h3>
+                            <p class="home-works__item-paragraph">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </a>
+                    </li>
+                    <li class="home-works__list-item">
+                        <a class="home-works__item-link" href="works.html" type="text/html">
+                            <img class="home-works__item-image" src="images/home-works/pic_01.jpg" alt="work image">
+                            <h3 class="home-works__item-header">着物関連イベントの開催</h3>
+                            <p class="home-works__item-paragraph">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </a>
+                    </li>
+                    <li class="home-works__list-item">
+                        <a class="home-works__item-link" href="works.html" type="text/html">
+                            <img class="home-works__item-image" src="images/home-works/pic_01.jpg" alt="work image">
+                            <h3 class="home-works__item-header">着物関連イベントの開催</h3>
+                            <p class="home-works__item-paragraph">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </a>
+                    </li>
+                    <li class="home-works__list-item">
+                        <a class="home-works__item-link" href="works.html" type="text/html">
+                            <img class="home-works__item-image" src="images/home-works/pic_01.jpg" alt="work image">
+                            <h3 class="home-works__item-header">着物関連イベントの開催</h3>
+                            <p class="home-works__item-paragraph">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </a>
+                    </li>
+                    <li class="home-works__list-item">
+                        <a class="home-works__item-link" href="works.html" type="text/html">
+                            <img class="home-works__item-image" src="images/home-works/pic_01.jpg" alt="work image">
+                            <h3 class="home-works__item-header">着物関連イベントの開催</h3>
+                            <p class="home-works__item-paragraph">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        <section class="home-column">
+            <div class="container">
+                <div class="title-item">
+                    <h2 class="topic">COLUMN</h2>
+                    <span>コラム</span>
+                </div>
+                <ul class="home-column__list">
+                    <li class="home-column__list-item">
+                        <a class="home-column__item-link" href="#" type="text/html">
+                            <img class="home-column__item-image" src="images/home-column/pic_01.jpg" alt="work image">
+                            <h3 class="home-column__item-header">着物関連イベントの開催</h3>
+                            <p class="home-column__item-paragraph">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテト</p>
+                        </a>
+                    </li>
+                    <li class="home-column__list-item">
+                        <a class="home-column__item-link" href="#" type="text/html">
+                            <img class="home-column__item-image" src="images/home-column/pic_02.jpg" alt="work image">
+                            <h3 class="home-column__item-header">着物関連イベントの開催</h3>
+                            <p class="home-column__item-paragraph">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテト</p>
+                        </a>
+                    </li>
+                    <li class="home-column__list-item">
+                        <a class="home-column__item-link" href="#" type="text/html">
+                            <img class="home-column__item-image" src="images/home-column/pic_03.jpg" alt="work image">
+                            <h3 class="home-column__item-header">着物関連イベントの開催</h3>
+                            <p class="home-column__item-paragraph">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテト</p>
+                        </a>
+                    </li>
+                    <li class="home-column__list-item">
+                        <a class="home-column__item-link" href="#" type="text/html">
+                            <img class="home-column__item-image" src="images/home-column/pic_04.jpg" alt="work image">
+                            <h3 class="home-column__item-header">着物関連イベントの開催</h3>
+                            <p class="home-column__item-paragraph">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテト</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="title-item">
+                    <h2 class="topic">CONTACT</h2>
+                    <span>お問い合わせ</span>
+                </div>
+                <form class="form" action="#" method="post">
+                    <h2 class="form__title">ご予約やご質問等ありましたらお気軽に
+                        以下のフォームより送信してください。</h2>
+                    <div class="form__inner">
+                        <div class="form__group">
+                            <div class="form__field-name">
+                                <label class="required" for="name">お名前</label>
+                            </div>
+                            <div class="form__field">
+                                <input id="name" type="text" required>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="form__field-name">
+                                <label class="required" for="email">メールアドレス</label>
+                            </div>
+                            <div class="form__field">
+                                <input id="email" type="email" required>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="form__field-name">
+                                <label class="required" for="inquiry">ご相談内容</label>
+                            </div>
+                            <div class="form__field">
+                                <textarea id="inquiry" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="btn-1">送信する</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <%= _.template(require('./parts/footer.html'))() %>
+</div>
+</body>
+</html>

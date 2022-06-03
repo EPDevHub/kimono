@@ -1,0 +1,93 @@
+.heading,
+.text {
+  display: block;
+  font-style: normal;
+}
+
+.heading {
+  &-1 {
+    @extend .heading;
+    font-size: 56px;
+    line-height: 82px;
+    font-weight: 400;
+
+    @include media('<lg') {
+      font-size: 48px;
+      line-height: 72px;
+    }
+    @include media('<sm') {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  &-2 {
+    @extend .heading;
+    font-size: 29px;
+    line-height: 40px;
+    font-weight: 400;
+
+    @include media('<lg') {
+      font-size: 26px;
+      line-height: 38px;
+    }
+    @include media('<sm') {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  &-3 {
+    @extend .heading;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+
+    @include media('<lg') {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    @include media('<sm') {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+.text {
+  &-1 {
+    @extend .text;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  &-2 {
+    @extend .text;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  &-3 {
+    @extend .text;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300;
+  }
+
+  &-4 {
+    @extend .text;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+
+  &-5 {
+    @extend .text;
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 300;
+  }
+}
+

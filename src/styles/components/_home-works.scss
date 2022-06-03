@@ -1,0 +1,82 @@
+
+.home-works {
+  padding-top: 56px;
+  padding-bottom: 66px;
+
+  @include media('<=sm') {
+    padding: 32px 0;
+  }
+
+  .container {
+    max-width: 1440px;
+    padding: 0 15px;
+
+    @include media('<=sm') {
+      padding: 0;
+    }
+  }
+
+  .title-item {
+    text-align: center;
+
+    span {
+      @extend .text-3;
+    }
+
+    .topic {
+      @extend .heading-2;
+    }
+  }
+
+  &__list {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &__list-item {
+    width: 33.33333%;
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 35px;
+
+    @include media('<=sm') {
+      width: 50%;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    @include media('<=xs') {
+      width: 100%;
+    }
+
+  }
+
+  &__item-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:hover {
+      transform: scale(1.02);
+      opacity: .9;
+      transition: .5s;
+    }
+  }
+
+  &__item-header {
+    @extend .heading-3;
+    color: $color-5;
+    margin-top: 12px;
+  }
+
+  &__item-paragraph {
+    @extend .text-1;
+    margin-top: 10px;
+  }
+
+
+}

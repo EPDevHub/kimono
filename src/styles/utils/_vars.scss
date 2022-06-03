@@ -1,0 +1,29 @@
+/*
+	vars
+*/
+
+$fonts: '../fonts/';
+$images: '../images/';
+
+$defFonts: 'M PLUS 1p', 'Noto Sans JP', Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Roboto, "Droid Sans",
+YuGothic, "游ゴシック", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+
+$breakpoints: (
+	xs: 375px,
+	sm: 768px,
+	md: 1024px,
+	lg: 1440px,
+	xl: 1920px,
+);
+
+$color-1: #373737;
+$color-2: #ffffff;
+$color-3: #f2f2f2;
+$color-4: #828282;
+$color-5: #981314;
+$color-6: #EB5757;
+
+
+$container-width: 900px;
+$container-offset: 15px;
+

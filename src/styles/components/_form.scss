@@ -1,0 +1,99 @@
+.form {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+
+  &__inner {
+    display: block;
+    width: 100%;
+    margin: 34px auto 0;
+
+  }
+
+  &__group {
+    height: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    @include media('<=sm') {
+      flex-direction: column;
+    }
+  }
+
+
+  &__title {
+    margin: 0 auto;
+    max-width: 260px;
+    text-align: center;
+    @extend .text-3;
+  }
+
+  &__field {
+    width: 100%;
+
+    input {
+      height: 50px;
+
+    }
+
+    textarea {
+      height: 136px;
+      padding-top: 5px;
+      resize: none;
+    }
+
+    input,
+    textarea {
+      @extend .text-1;
+      padding: 13px 20px;
+      border: 0;
+      background-color: $color-3;
+      width: 100%;
+    }
+
+    &-name {
+      width: 26.5%;
+
+      @include media('<=sm') {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      label {
+        @extend .text-1;
+        padding-left: 4px;
+        padding-top: 10px;
+      }
+    }
+
+    &-wrap {
+      width: 100%;
+    }
+  }
+
+  .button {
+    text-align: center;
+    margin-top: 40px;
+    @include media('<=sm') {
+      margin-top: 30px;
+    }
+    @include media('<=xs') {
+      margin-top: 20px;
+    }
+
+  }
+
+  .required {
+
+    &:after {
+      content: '※';
+      font-weight: normal;
+      padding-left: 5px;
+      color: $color-6;
+    }
+  }
+}

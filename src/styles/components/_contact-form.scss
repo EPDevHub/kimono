@@ -1,0 +1,34 @@
+.contact {
+  padding-top: 96px;
+  padding-bottom: 103px;
+  @include media('<sm') {
+    padding-top: 48px;
+  }
+  @include media('<xs') {
+    padding-top: 32px;
+  }
+
+  .container {
+    max-width: 790px;
+    padding: 0 15px;
+
+    @include media('<=sm') {
+      max-width: 600px;
+
+    }
+  }
+
+  .title-item {
+    text-align: center;
+
+    span {
+      @extend .text-3;
+    }
+
+    .topic {
+      @extend .heading-2;
+    }
+  }
+
+
+}

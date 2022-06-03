@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- og format -->
+    <meta property="og:title" content="">
+    <!-- bar color -->
+    <meta name="theme-color" content="#fff">
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">-->
+
+    <title>Works</title>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <%= _.template(require('./parts/header.html'))() %>
+    <div class="app" id="app">
+        <div class="works-vision">
+            <div class="works-vision__image">
+            </div>
+            <div class="works-vision__title">
+                <h1>事業内容</h1>
+            </div>
+        </div>
+        <div class="works-breadcrumbs">
+                <ul class="breadcrumbs">
+                    <li><a class="breadcrumbs__path" href="index.html">Home</a></li>
+                    <li><a class="breadcrumbs__current" href="#">Works</a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="works">
+            <div class="container">
+                <h2 class="works__title">事業内容</h2>
+                <h2 class="works__paragraph">ご予約やご質問等ありましたらお気軽に
+                    以下のフォームより送信してください。</h2>
+                <h3 class="slider__header">着物関連イベントの開催</h3>
+
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/works/pic_02.jpg" alt="slider image"/>
+                            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ キストテキストテキストテキストテキストテキスト
+                                テキストテ キストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ キストテキストテキストテキストテキストテキスト
+                                テキストテ キストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキスト
+                                テキストテキストテキストテキスストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ キストテキストテキストテキストテキストテキスト
+                                テキストテ キストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキスト
+                                テキストテキストテキストテキスストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ キストテキストテキストテキストテキストテキスト
+                                テキストテ キストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキスト
+                                テキストテキストテキストテキスキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ キストテキストテキストテキストテキストテキスト
+
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/works/pic_03.jpg" alt="slider image"/>
+                            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/works/pic_04.jpg" alt="slider image"/>
+                            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/works/pic_05.jpg" alt="slider image"/>
+                            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
+                    </div>
+                    <!--                    <div class="swiper-button-next"></div>-->
+                    <!--                    <div class="swiper-button-prev"></div>-->
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/works/pic_02.jpg" alt="slider image"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/works/pic_03.jpg" alt="slider image"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/works/pic_04.jpg" alt="slider image"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/works/pic_05.jpg" alt="slider image"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <%= _.template(require('./parts/footer.html'))() %>
+
+</div>
+</body>
+</html>

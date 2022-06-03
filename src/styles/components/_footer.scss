@@ -1,0 +1,100 @@
+.footer {
+  display: block;
+  width: 100%;
+  margin-top: auto;
+  background-color: $color-3;
+
+  .container {
+    max-width: 900px;
+  }
+
+  &__logo {
+    img {
+      margin: 60px auto 0;
+      width: 69px;
+
+      @include media('<=md') {
+        margin-top: 48px;
+        width: 54px
+      }
+      @include media('<=sm') {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  &__inner {
+    display: block;
+  }
+
+  &__nav {
+    margin: 49px auto 0;
+
+    @include media('<=md') {
+      margin-top: 48px;
+    }
+    @include media('<=sm') {
+      margin-top: 32px;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__nav-item {
+    @extend .text-1;
+    padding: 10px 34px;
+
+    a:hover {
+      color: $color-5;
+      font-weight: 400;
+      transition: .2s;
+    }
+  }
+
+  &__links-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    @include media('<=md') {
+      margin-top: 48px;
+    }
+
+    @include media('<=sm') {
+      margin-top: 32px;
+    }
+  }
+
+  &__links-item {
+    padding-left: 10px;
+
+    a:hover {
+      svg path {
+        fill: $color-5;
+        transition: .3s;
+      }
+
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+
+  small {
+    font-size: 0.75rem;
+    display: block;
+    text-align: center;
+    margin: 30px 0 10px;
+
+    @include media('<=sm') {
+      margin-top: 20px;
+    }
+  }
+
+}

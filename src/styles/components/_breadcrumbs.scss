@@ -1,0 +1,42 @@
+.breadcrumbs {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  margin: 64px auto 0;
+  padding-top: 12px;
+  padding-left: 30px;
+
+  li {
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 400;
+
+    &:last-child{
+      pointer-events: none;
+    }
+
+    &:after {
+      content: '>';
+      padding: 0 8px;
+    }
+
+    &:last-child {
+      &:after {
+        content: '';
+      }
+    }
+  }
+
+  &__path {
+    color: $color-4;
+  }
+
+  &__current {
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

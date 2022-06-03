@@ -1,0 +1,49 @@
+.btn {
+  display: inline-block;
+
+  &-1 {
+    @extend .btn;
+    @extend .text-5;
+    border: 1px solid $color-5;
+    padding: 15px 48px;
+    margin: 0 auto;
+    color: $color-5;
+    background: transparent;
+    text-align: center;
+
+    @at-root :root.hover &:hover {
+      background-color: $color-5;
+      color: $color-2;
+    }
+
+    &:disabled {
+      border: 1px solid $color-4;
+      color: $color-4;
+    }
+  }
+
+  &-2 {
+    @extend .btn;
+    @extend .text-5;
+    max-width: 96px;
+    padding: 8px 16px;
+    background-color: $color-3;
+    text-align: center;
+
+    @at-root :root.hover &:hover {
+      background-color: $color-5;
+      color: $color-2;
+    }
+
+    &:disabled {
+      border: 1px solid $color-4;
+      color: $color-4;
+    }
+
+    &:disabled {
+      pointer-events: none;
+    }
+
+
+  }
+}
